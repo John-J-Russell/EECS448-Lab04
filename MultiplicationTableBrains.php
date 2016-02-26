@@ -1,5 +1,5 @@
 <?php
-	//does this comment? Yes, yes it does.
+
 	error_reporting(E_ALL);
 	ini_set("display_errors", 1);
 
@@ -10,7 +10,7 @@
 		echo "<tr>";
 		for($x=1; $x <= 100; $x= $x+1)
 		{
-			echo "<td>"x*y"</td>";
+			echo "<td>" . $x*$y . "</td>";
 		}
 		echo "</tr>";
 	}
