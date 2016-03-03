@@ -1,0 +1,17 @@
+body
+{
+	background-color: rgb(200,200,255);
+}
+
+form.formy
+{
+	font-family: Georgia, Serif;
+	color: black;
+	font-size: 1.2em;
+}
+div.results
+{
+	font-family: Georgia, Serif;
+	color: black;
+	font-size: 1.2em;
+}

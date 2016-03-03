@@ -29,6 +29,7 @@
 		$numCorrect++;
 	}
 	//echo $numCorrect;
+	echo "<div class=\"results\">";
 	echo "Question 1: PV=nR\"_\", what is \"_\"? <br>";
 	echo "You said: " . $q1 . "<br>";
 	echo "Correct answer: \"T\" <br> <br> ";
@@ -56,4 +57,5 @@
 	{
 		echo "<br>Congratulations, you aced this test. I hope you're proud.";
 	}
+	echo "</div>";
 ?>
