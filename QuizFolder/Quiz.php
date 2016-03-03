@@ -1,7 +1,7 @@
 <?php
 
-	error_reporting(E_ALL);
-	ini_set("display_errors", 1);
+	//error_reporting(E_ALL);
+	//ini_set("display_errors", 1);
 	$q1=$_POST["q1"];
 	$q2=$_POST["q2"];
 	$q3=$_POST["q3"];
@@ -29,7 +29,9 @@
 		$numCorrect++;
 	}
 	//echo $numCorrect;
-	echo "<div class=\"results\">";
+	
+	echo "<link href=\"Quiz.css\" rel=\"stylesheet\" type=\"text/css\"/>";
+	echo "<div id=\"results\">";
 	echo "Question 1: PV=nR\"_\", what is \"_\"? <br>";
 	echo "You said: " . $q1 . "<br>";
 	echo "Correct answer: \"T\" <br> <br> ";
