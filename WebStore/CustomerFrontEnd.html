@@ -7,12 +7,13 @@
 			type="text/css"/>
 	</head>
 	<body>
-		<div id="purchase options">
+		<p id="header"> Staples and Stuff</p>
+		<div id="purchaseOptions">
 			Stuff goes here
 		</div>
 
 		<div id="shippingOptions">
-			Pick a shipping option:
+			Pick a shipping option: <br>
 			<input type="radio" name="shipOp" value="free"> Free 7-day<br>
 			<input type="radio" name="shipOp" value="5">$5.00 3-day<br>
 			<input type="radio" name="shipOp" value="50">$50.00 Overnight<br>
@@ -23,5 +24,9 @@
 				Username: <input type="text" id="username" name="user"> <br>
 				Password: <input type="password" id="password" name="pass"> <br>
 				<button type="button" onclick="checkForm()"> Submit</button>
+				<button type="button" onclick="reset()">Reset</button>
 			</form>
 		<div>
+
+	</body>
+</html>
