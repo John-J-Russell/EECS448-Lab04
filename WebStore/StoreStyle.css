@@ -65,7 +65,7 @@ td
 	height:200px;
 }
 
-#shippingOptions
+div.shippingOptions
 {
 	border-style:inset;
 	border-color: rgb(226, 168, 90);

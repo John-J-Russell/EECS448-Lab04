@@ -8,7 +8,7 @@
 	$email=$_POST["user"];
 	$password=$_POST["pass"];
 	
-	echo "<link href=\"Style.css\" rel=\"stylesheet\" type=\"text/css\"/>";
+	echo "<link href=\"StoreStyle.css\" rel=\"stylesheet\" type=\"text/css\"/>";
 	
 	echo "Welcome, " . $email;
 	echo "<br> Your password is: " . $password;
@@ -19,7 +19,7 @@
 	echo "<tr> <td>Box of Staples</td> <td>" . $staplesQuantity . "</td> <td> $" . 5.00 . "</td> <td>" . $staplesQuantity*5.00 . "</td> </tr>";
 	echo "<tr> <td>Staple Remover</td> <td>" . $stapleRemoverQuantity . "</td> <td> $" . 10.00 . "</td> <td>" . $stapleRemoverQuantity*10.00 . "</td> </tr>";
 	echo "<tr id=\"long\" rowspan=\"4\"> Total: $". ($staplerQuantity*15.00 + $staplesQuantity*5.00 + $stapleRemoverQuantity*10.00);
-	echo "</table";
+	echo "</table>";
 	echo "</body>";
 	
 ?>
