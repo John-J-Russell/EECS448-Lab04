@@ -33,7 +33,7 @@
 	echo "<tr> <td>Box of Staples</td> <td>" . $staplesQuantity . "</td> <td> $" . 5.00 . "</td> <td>" . $staplesQuantity*5.00 . "</td> </tr>";
 	echo "<tr> <td>Staple Remover</td> <td>" . $stapleRemoverQuantity . "</td> <td> $" . 10.00 . "</td> <td>" . $stapleRemoverQuantity*10.00 . "</td> </tr>";
 	echo "<tr> <td rowspan=\"2\"> Shipping Option: </td> <td> " . $shippingOptionText . "</td> <td> $" . $shippingOption . ".00 </td> </tr>";
-	echo "<tr> <td> id=\"long\" rowspan=\"4\"> Total: $". ($staplerQuantity*15.00 + $staplesQuantity*5.00 + $stapleRemoverQuantity*10.00) . "</td> </tr>";
+	echo "<tr> <td> id=\"long\" rowspan=\"4\"> Total: $". ($staplerQuantity*15.00 + $staplesQuantity*5.00 + $stapleRemoverQuantity*10.00 + $shippingOption) . "</td> </tr>";
 	echo "</table>";
 	echo "</body>";
 	
