@@ -7,7 +7,7 @@ function checkForm()
 	var ship=document.getElementById("shipOp").value;
 	var user=document.getElementById("username").value;
 	var pass=document.getElementById("password").value;
-	if(p1>=0 && p2>=0 && p3>=0 && (ship==0 || ship==5 || ship==50) && (validateEmail(user)) && pass!="")
+	if(p1>=0 && p2>=0 && p3>=0 && (ship==0 || ship==5 || ship==50) &&  pass!="")
 	{
 		alert("Working");
 		return(true);
@@ -21,6 +21,7 @@ function checkForm()
 	}
 }
 
+/*
 function reset()
 {
 	Document.getElementById("staplerOrderNum").value=0;
@@ -36,12 +37,13 @@ function reset()
 	document.getElementById("username").value="";
 	document.getElementById("password").value="";
 }
-
+*/
 
 //very basic email validator taken from StackOverflow user "Squirtle"
 //link to page: http://stackoverflow.com/questions/46155/validate-email-address-in-javascript
 function validateEmail(email) 
 {
     var re = /\S+@\S+\.\S+/; //I have absolutely no idea what this means.
+	alert(re.test(email));
     return re.test(email);
 }
