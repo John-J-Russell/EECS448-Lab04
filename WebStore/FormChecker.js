@@ -1,13 +1,42 @@
 function checkForm()
 {
 	//Validate information
+	alert("triggered");
+	//return false;
 	var p1=document.getElementById("staplerOrderNum").value;
+	alert("first order");
 	var p2=document.getElementById("staplesOrderNum").value;
+	alert("second order);
 	var p3=document.getElementById("stapleRemoverOrderNum").value;
-	var ship=document.getElementById("shipOp").value;
+	alert("3rd order");
+	var ship=document.getElementByName("shipOp");
+	alert("shipping option first read");
+	var shipPrice=null;
+	alert("test");
+	for(var x=0; x<ship.length; x++)
+	{
+		if(ship[i].checked)
+		{
+			if(x==0)
+			{
+				shipPrice=0;
+			}
+			else if(x==1)
+			{
+				shipPrice=5;
+			}
+			else
+			{
+				shipPrice=50;
+			}
+		}
+	}
+	alert("Shipping option gamut complete");
 	var user=document.getElementById("username").value;
 	var pass=document.getElementById("password").value;
-	if(p1>=0 && p2>=0 && p3>=0 && (ship==0 || ship==5 || ship==50) &&  pass!="")
+	alert(validateEmail(user));
+	return false;
+	if(p1>=0 && p2>=0 && p3>=0 && (shipPrice==0 || shipPrice==5 || shipPrice==50) && (validateEmail(user)) && pass!="")
 	{
 		alert("Working");
 		return(true);
@@ -21,14 +50,14 @@ function checkForm()
 	}
 }
 
-/*
+
 function reset()
 {
 	Document.getElementById("staplerOrderNum").value=0;
 	document.getElementById("staplesOrderNum").value=0;
 	document.getElementById("stapleRemoverOrderNum").value=0;
 	
-	//document.getElementById("the radio buttons idk").value="whatever means nothing";
+	
 	var radios=getElementsByName("shipOp");
 	for(var x=0; x<radios.length; x=x+1)
 	{
@@ -37,7 +66,7 @@ function reset()
 	document.getElementById("username").value="";
 	document.getElementById("password").value="";
 }
-*/
+
 
 //very basic email validator taken from StackOverflow user "Squirtle"
 //link to page: http://stackoverflow.com/questions/46155/validate-email-address-in-javascript
